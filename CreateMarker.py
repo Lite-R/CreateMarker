@@ -17,8 +17,7 @@ markerSep = 0.01
 
 gridBoard = aruco.GridBoard_create(horLength, verLength, markerLength, markerSep, aruco_dict)
 image = gridBoard.draw((400,400), 10, 1)
-#image = aruco.drawPlanarBoard(gridBoard, 700, 10, 1)
-#image = gridBoard.draw()
+
 cv2.imwrite("testMarker.jpg", image)
 
 cv2.imshow('frame', image)
